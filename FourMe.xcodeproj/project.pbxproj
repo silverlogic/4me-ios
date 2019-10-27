@@ -8,22 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		22242A8D2365115E00B544D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22242A8C2365115E00B544D4 /* AppDelegate.swift */; };
-		22242A8F2365115E00B544D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22242A8E2365115E00B544D4 /* SceneDelegate.swift */; };
 		22242A912365115E00B544D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22242A902365115E00B544D4 /* ViewController.swift */; };
 		22242A942365115E00B544D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22242A922365115E00B544D4 /* Main.storyboard */; };
 		22242A962365115E00B544D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22242A952365115E00B544D4 /* Assets.xcassets */; };
 		22242A992365115E00B544D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22242A972365115E00B544D4 /* LaunchScreen.storyboard */; };
+		22775D00236513D400532768 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22775CFF236513D300532768 /* SignupViewController.swift */; };
+		22BFCA3F236523AB00C42124 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BFCA3E236523AB00C42124 /* HealthKit.framework */; };
+		22BFCA42236528E500C42124 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFCA41236528E500C42124 /* CircleView.swift */; };
+		5C99A187EE9CF807C0DD24D7 /* Pods_FourMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C6A220FCDC7BFA8E8AAD0B /* Pods_FourMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22242A892365115E00B544D4 /* FourMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22242A8C2365115E00B544D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22242A8E2365115E00B544D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22242A902365115E00B544D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22242A932365115E00B544D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22242A952365115E00B544D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22242A982365115E00B544D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22242A9A2365115E00B544D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22775CFF236513D300532768 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		22BFCA3D236523AA00C42124 /* FourMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FourMe.entitlements; sourceTree = "<group>"; };
+		22BFCA3E236523AB00C42124 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		22BFCA41236528E500C42124 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		39C6A220FCDC7BFA8E8AAD0B /* Pods_FourMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8905755D2A85F6C39CBBD8 /* Pods-FourMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FourMe/Pods-FourMe.debug.xcconfig"; sourceTree = "<group>"; };
+		ACD0ACF37E959042B431C57C /* Pods-FourMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FourMe/Pods-FourMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C99A187EE9CF807C0DD24D7 /* Pods_FourMe.framework in Frameworks */,
+				22BFCA3F236523AB00C42124 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				22242A8B2365115E00B544D4 /* FourMe */,
 				22242A8A2365115E00B544D4 /* Products */,
+				F9138274C4A1A5D38BAC9DEB /* Pods */,
+				E9F32B163123457116D2F30D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,43 @@
 		22242A8B2365115E00B544D4 /* FourMe */ = {
 			isa = PBXGroup;
 			children = (
+				22BFCA40236528C600C42124 /* Support Views */,
+				22BFCA3D236523AA00C42124 /* FourMe.entitlements */,
 				22242A8C2365115E00B544D4 /* AppDelegate.swift */,
-				22242A8E2365115E00B544D4 /* SceneDelegate.swift */,
 				22242A902365115E00B544D4 /* ViewController.swift */,
 				22242A922365115E00B544D4 /* Main.storyboard */,
 				22242A952365115E00B544D4 /* Assets.xcassets */,
 				22242A972365115E00B544D4 /* LaunchScreen.storyboard */,
 				22242A9A2365115E00B544D4 /* Info.plist */,
+				22775CFF236513D300532768 /* SignupViewController.swift */,
 			);
 			path = FourMe;
+			sourceTree = "<group>";
+		};
+		22BFCA40236528C600C42124 /* Support Views */ = {
+			isa = PBXGroup;
+			children = (
+				22BFCA41236528E500C42124 /* CircleView.swift */,
+			);
+			path = "Support Views";
+			sourceTree = "<group>";
+		};
+		E9F32B163123457116D2F30D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22BFCA3E236523AB00C42124 /* HealthKit.framework */,
+				39C6A220FCDC7BFA8E8AAD0B /* Pods_FourMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9138274C4A1A5D38BAC9DEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E8905755D2A85F6C39CBBD8 /* Pods-FourMe.debug.xcconfig */,
+				ACD0ACF37E959042B431C57C /* Pods-FourMe.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22242A9D2365115E00B544D4 /* Build configuration list for PBXNativeTarget "FourMe" */;
 			buildPhases = (
+				A5EEAB116663369BF3682CD0 /* [CP] Check Pods Manifest.lock */,
 				22242A852365115E00B544D4 /* Sources */,
 				22242A862365115E00B544D4 /* Frameworks */,
 				22242A872365115E00B544D4 /* Resources */,
+				DB73742082098D11A000DBEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +176,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5EEAB116663369BF3682CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB73742082098D11A000DBEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FourMe/Pods-FourMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourMe/Pods-FourMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22242A852365115E00B544D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BFCA42236528E500C42124 /* CircleView.swift in Sources */,
+				22775D00236513D400532768 /* SignupViewController.swift in Sources */,
 				22242A912365115E00B544D4 /* ViewController.swift in Sources */,
 				22242A8D2365115E00B544D4 /* AppDelegate.swift in Sources */,
-				22242A8F2365115E00B544D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +373,14 @@
 		};
 		22242A9E2365115E00B544D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8905755D2A85F6C39CBBD8 /* Pods-FourMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FourMe/FourMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SB3F2S2K3;
 				INFOPLIST_FILE = FourMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +394,14 @@
 		};
 		22242A9F2365115E00B544D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD0ACF37E959042B431C57C /* Pods-FourMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FourMe/FourMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SB3F2S2K3;
 				INFOPLIST_FILE = FourMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
