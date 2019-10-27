@@ -91,8 +91,12 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.circleMgUntil.progressValue = 0
     }
     
+    var showedSignup = false
     override func viewDidAppear(_ animated: Bool) {
-       // self.performSegue(withIdentifier: "reward", sender: nil)
+        if !self.showedSignup {
+            self.showedSignup = true
+            self.performSegue(withIdentifier: "signup", sender: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

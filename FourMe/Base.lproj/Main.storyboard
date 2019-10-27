@@ -23,46 +23,6 @@
             </objects>
             <point key="canvasLocation" x="-749" y="138"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vLl-YP-cFa">
-            <objects>
-                <viewController id="8CC-bT-vnV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vcd-rb-Sz3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVQ-P1-HcE">
-                                <rect key="frame" x="167" y="782" width="80" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="cSF-jr-Rbx"/>
-                                    <constraint firstAttribute="width" constant="80" id="kRb-AC-alq"/>
-                                </constraints>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="Xd7-aP-1Rw" kind="show" id="lgD-aM-DH9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We will ask for healthkit data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jva-NK-vAW">
-                                <rect key="frame" x="98" y="136" width="219" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="XVQ-P1-HcE" firstAttribute="centerX" secondItem="Vcd-rb-Sz3" secondAttribute="centerX" id="STC-0b-Mrg"/>
-                            <constraint firstItem="LaJ-1C-GxA" firstAttribute="bottom" secondItem="XVQ-P1-HcE" secondAttribute="bottom" constant="30" id="bMC-hr-YNI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="LaJ-1C-GxA"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="WQ7-dj-F0m"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mZ5-Pi-oTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1173.913043478261" y="137.94642857142856"/>
-        </scene>
         <!--Signup View Controller-->
         <scene sceneID="Rag-Zk-29d">
             <objects>
@@ -74,7 +34,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="N2r-N1-uNh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5w-lu-T29" customClass="NextTextField" customModule="FourMe" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lars Klassen" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5w-lu-T29" customClass="NextTextField" customModule="FourMe" customModuleProvider="target">
                                 <rect key="frame" x="164" y="324" width="220" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="Z6C-2j-Cmu"/>
@@ -85,7 +45,7 @@
                                     <outlet property="nextField" destination="Q5S-oH-1ml" id="3z6-CO-oMK"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5S-oH-1ml" customClass="NextTextField" customModule="FourMe" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lk2@tsl.io" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5S-oH-1ml" customClass="NextTextField" customModule="FourMe" customModuleProvider="target">
                                 <rect key="frame" x="164" y="385" width="220" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
@@ -93,7 +53,7 @@
                                     <outlet property="nextField" destination="N5W-7O-azu" id="rrO-6V-1WB"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-7O-azu" customClass="NextTextField" customModule="FourMe" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-7O-azu" customClass="NextTextField" customModule="FourMe" customModuleProvider="target">
                                 <rect key="frame" x="164" y="446" width="220" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="join" secureTextEntry="YES" textContentType="password"/>
@@ -146,6 +106,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionLogin:" destination="Xd7-aP-1Rw" eventType="touchUpInside" id="kLg-8A-5yD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -181,12 +144,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qy2-kT-Gag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901.449275362319" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1223" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Consent View Controller-->
         <scene sceneID="Bgg-nI-cpl">
             <objects>
-                <viewController id="3E9-iZ-iGb" sceneMemberID="viewController">
+                <viewController id="3E9-iZ-iGb" customClass="ConsentViewController" customModule="FourMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lfz-YA-GQi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,8 +164,8 @@
                                     <constraint firstAttribute="height" constant="200" id="mvk-I8-Ya6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Helping Others." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqb-em-3HH">
-                                <rect key="frame" x="126" y="324" width="163" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helping Others." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqb-em-3HH">
+                                <rect key="frame" x="125.5" y="324" width="163" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -218,12 +181,18 @@
                                 <state key="normal" title="I want to help">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionWantHelp:" destination="3E9-iZ-iGb" eventType="touchUpInside" id="tnK-cO-Biw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omE-9b-NXI">
                                 <rect key="frame" x="151.5" y="830" width="111" height="30"/>
                                 <state key="normal" title="I do not consent">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="dontConsent:" destination="3E9-iZ-iGb" eventType="touchUpInside" id="AlR-vB-76v"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdP-Lt-Hl4">
                                 <rect key="frame" x="50" y="381" width="314" height="183"/>
@@ -243,6 +212,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                             <constraint firstItem="M8g-VD-sWr" firstAttribute="trailing" secondItem="EYa-qM-x9D" secondAttribute="trailing" id="46m-Wl-Qf1"/>
                             <constraint firstItem="LjL-cV-xuJ" firstAttribute="centerX" secondItem="lfz-YA-GQi" secondAttribute="centerX" id="5NF-lN-IqQ"/>
                             <constraint firstItem="omE-9b-NXI" firstAttribute="top" secondItem="urG-Wv-Vsp" secondAttribute="bottom" constant="8" id="5yg-Hm-MKm"/>
+                            <constraint firstItem="jqb-em-3HH" firstAttribute="centerX" secondItem="lfz-YA-GQi" secondAttribute="centerX" id="9Od-JO-LPF"/>
                             <constraint firstItem="urG-Wv-Vsp" firstAttribute="centerX" secondItem="lfz-YA-GQi" secondAttribute="centerX" id="CVR-WN-zok"/>
                             <constraint firstItem="WdP-Lt-Hl4" firstAttribute="leading" secondItem="EYa-qM-x9D" secondAttribute="leading" constant="50" id="LqK-Fn-BGf"/>
                             <constraint firstItem="jqb-em-3HH" firstAttribute="top" secondItem="LjL-cV-xuJ" secondAttribute="bottom" constant="40" id="OxP-Ip-Xpd"/>
@@ -258,7 +228,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKF-b3-3c3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2679.7101449275365" y="137.94642857142856"/>
+            <point key="canvasLocation" x="2194" y="138"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="a9J-B7-Luc">
@@ -522,6 +492,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                         <outlet property="labelScore" destination="8iK-SN-1dH" id="9wr-Cc-grE"/>
                         <outlet property="table" destination="z62-vP-kDO" id="abg-yq-T3D"/>
                         <segue destination="EFL-dC-8Ga" kind="presentation" identifier="log" modalPresentationStyle="fullScreen" id="e5F-ZN-w4Q"/>
+                        <segue destination="jVl-cA-Zmn" kind="presentation" identifier="signup" modalPresentationStyle="fullScreen" id="xuz-qC-UCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPW-rX-Ilm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -564,6 +535,22 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcx-AQ-HlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3476.811594202899" y="829.6875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LyG-fz-3Rd">
+            <objects>
+                <viewController id="vTS-D1-KVg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1lg-Xs-sTr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eZs-BA-rPi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="BookIcon" id="aIi-bX-07B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMr-HK-6IU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4301" y="830"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zEW-55-mlq">
@@ -804,7 +791,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8CC-bT-vnV" kind="relationship" relationship="rootViewController" id="Hc9-Hg-kKi"/>
+                        <segue destination="Xd7-aP-1Rw" kind="relationship" relationship="rootViewController" id="nYv-oQ-2YH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOo-tL-LRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -826,6 +813,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                     <connections>
                         <segue destination="7ti-WT-Kac" kind="relationship" relationship="viewControllers" id="FB4-dA-zmi"/>
                         <segue destination="Vc8-sX-v04" kind="relationship" relationship="viewControllers" id="Nst-jU-j3K"/>
+                        <segue destination="vTS-D1-KVg" kind="relationship" relationship="viewControllers" id="amJ-RU-G1b"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtQ-ta-49d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -835,6 +823,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
     </scenes>
     <resources>
         <image name="AliceProfileImage" width="176" height="177"/>
+        <image name="BookIcon" width="28.333333969116211" height="22"/>
         <image name="CalendarIcon" width="67" height="79"/>
         <image name="DashIcon" width="25" height="13.666666984558105"/>
         <image name="MapIcon" width="17.333333969116211" height="25"/>

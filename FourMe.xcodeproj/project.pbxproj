@@ -14,6 +14,7 @@
 		22242A962365115E00B544D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22242A952365115E00B544D4 /* Assets.xcassets */; };
 		22242A992365115E00B544D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22242A972365115E00B544D4 /* LaunchScreen.storyboard */; };
 		22435E39236585C0004E7C30 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22435E38236585C0004E7C30 /* LogViewController.swift */; };
+		22435E3B2365AA8F004E7C30 /* ConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22435E3A2365AA8F004E7C30 /* ConsentViewController.swift */; };
 		22775D00236513D400532768 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22775CFF236513D300532768 /* SignupViewController.swift */; };
 		22BFCA3F236523AB00C42124 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BFCA3E236523AB00C42124 /* HealthKit.framework */; };
 		22BFCA42236528E500C42124 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFCA41236528E500C42124 /* CircleView.swift */; };
@@ -33,6 +34,7 @@
 		22242A982365115E00B544D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22242A9A2365115E00B544D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22435E38236585C0004E7C30 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		22435E3A2365AA8F004E7C30 /* ConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentViewController.swift; sourceTree = "<group>"; };
 		22775CFF236513D300532768 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		22BFCA3D236523AA00C42124 /* FourMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FourMe.entitlements; sourceTree = "<group>"; };
 		22BFCA3E236523AB00C42124 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 				22BFCA432365316900C42124 /* AskHealthKitViewController.swift */,
 				221C3EDC23655C6000E379F3 /* DashboardViewController.swift */,
 				22435E38236585C0004E7C30 /* LogViewController.swift */,
+				22435E3A2365AA8F004E7C30 /* ConsentViewController.swift */,
 			);
 			path = FourMe;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				22242A912365115E00B544D4 /* ViewController.swift in Sources */,
 				22BFCA462365450900C42124 /* NextTextField.swift in Sources */,
 				22BFCA4823654F8B00C42124 /* ScannerView.swift in Sources */,
+				22435E3B2365AA8F004E7C30 /* ConsentViewController.swift in Sources */,
 				22242A8D2365115E00B544D4 /* AppDelegate.swift in Sources */,
 				221C3EDD23655C6000E379F3 /* DashboardViewController.swift in Sources */,
 			);

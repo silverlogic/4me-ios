@@ -11,22 +11,15 @@ import HealthKit
 
 class SignupViewController: UIViewController {
 
-    let healthStore = HKHealthStore();
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let allTypes = Set([HKObjectType.quantityType(forIdentifier: .height)!,
-                            HKObjectType.quantityType(forIdentifier: .bodyMass)!,
-                            HKObjectType.characteristicType(forIdentifier: .biologicalSex)!]);
-        
-        healthStore.requestAuthorization(toShare: nil, read: allTypes) { (success, error) in
-            
-        }
-        
         // Do any additional setup after loading the view.
     }
-  
+    
+    @IBAction func actionLogin(_ sender: Any) {
+        self.parent?.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
