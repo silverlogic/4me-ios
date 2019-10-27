@@ -130,7 +130,8 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
             vc.listItem = listItem
             vc.completionHandler = {
                 self.table.reloadData()
-                self.setScore(score: self.currentScore + 50)
+                let score = self.currentScore + 50
+                self.setScore(score: score <= 2000 ? score : 2000)
                 self.performSegue(withIdentifier: "popover", sender: "points")
             }
         } else if let popover = sender as? String {
