@@ -28,11 +28,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         let firstPin = MKPointAnnotation()
         firstPin.coordinate = CLLocationCoordinate2DMake(36.1082017, -115.1670873)
-        firstPin.title = "Hawkins Testing Center"
+        firstPin.title = "La Favorita Market"
         self.mapView.addAnnotation(firstPin)
         
         let secondPin = MKPointAnnotation()
-        secondPin.title = "Testing Centers of America"
+        secondPin.title = "Green Valley Grocery"
         secondPin.coordinate = CLLocationCoordinate2DMake(36.1042017, -115.1630873)
         self.mapView.addAnnotation(secondPin)
     }
@@ -75,7 +75,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
         if let annotationView = annotationView {
             // Configure your annotation view here
-            if annotation.title == "Hawkins Testing Center" {
+            if annotation.title == "La Favorita Market" {
                 annotationView.image = UIImage(named: "MapIcon_Blue.png")
             } else {
                 annotationView.image = UIImage(named: "MapIcon_Orange.png")

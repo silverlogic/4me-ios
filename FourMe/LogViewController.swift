@@ -33,6 +33,7 @@ class LogViewController: UIViewController {
             
             if listItem.unit == "mg" {
                 self.scannerView.isHidden = false
+                self.scannerView.setup()
                 self.scannerView.completionHandler = { (barcode) -> Void in self.textFieldValue.text = "39"}
             }
         }

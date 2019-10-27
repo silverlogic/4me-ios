@@ -437,7 +437,7 @@ INSULIN SAVINGS</string>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LARSProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-OS-fLA">
-                                <rect key="frame" x="334" y="44" width="60" height="60.000000000000114"/>
+                                <rect key="frame" x="334" y="44" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ocw-23-BgR"/>
                                     <constraint firstAttribute="width" constant="60" id="jsn-cb-ShF"/>
@@ -518,12 +518,12 @@ INSULIN SAVINGS</string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdR-9Z-MW7" customClass="ToggleButton" customModule="FourMe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="122" width="102" height="50"/>
-                                        <color key="backgroundColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pAI-Zm-Wjj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Testing Center">
+                                        <state key="normal" title="Groceries">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -536,7 +536,7 @@ INSULIN SAVINGS</string>
                                         <rect key="frame" x="104" y="122" width="102" height="50"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Groceries">
+                                        <state key="normal" title="Testing Center">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -582,7 +582,7 @@ INSULIN SAVINGS</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LARSProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="jUX-h5-skx">
-                                        <rect key="frame" x="334" y="44" width="60" height="60.000000000000114"/>
+                                        <rect key="frame" x="334" y="44" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="ZFd-Y1-vOt"/>
                                             <constraint firstAttribute="height" constant="60" id="a3s-F6-B1o"/>
@@ -629,26 +629,30 @@ INSULIN SAVINGS</string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapIcon_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="eCx-xB-CBU">
                                         <rect key="frame" x="20" y="140" width="60" height="60"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hawkins Testing Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bv6-Ok-NoD">
-                                        <rect key="frame" x="100" y="40" width="206" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Favorita Market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bv6-Ok-NoD">
+                                        <rect key="frame" x="100" y="40" width="159.5" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(954) 555-1212 $12 Testing Package" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-Ll-y0e">
-                                        <rect key="frame" x="100" y="62" width="157.5" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-Ll-y0e">
+                                        <rect key="frame" x="100" y="62" width="124.5" height="41"/>
+                                        <string key="text">573 E Twain Ave
+(954) 555-1212</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(954) 333-4321 $5 Testing Package" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9P-km-PL9">
-                                        <rect key="frame" x="100" y="162" width="150.5" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9P-km-PL9">
+                                        <rect key="frame" x="100" y="162" width="174" height="41"/>
+                                        <string key="text">3680 W Tropicana Ave
+(954) 333-4321</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing Centers of America" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNd-78-YyQ">
-                                        <rect key="frame" x="100" y="140" width="234.5" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Valley Grocery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNd-78-YyQ">
+                                        <rect key="frame" x="100" y="140" width="182" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -876,7 +880,7 @@ You've earned</string>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LARSProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="opw-1o-hZ2">
-                                <rect key="frame" x="334" y="44" width="60" height="60.000000000000114"/>
+                                <rect key="frame" x="334" y="44" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="P9l-oD-Pm2"/>
                                     <constraint firstAttribute="height" constant="60" id="kEk-K1-H5O"/>
@@ -1099,7 +1103,7 @@ You've earned</string>
                                     <constraint firstAttribute="width" constant="140" id="ph1-Sj-moR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="I want to help">
+                                <state key="normal" title="Allow">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1107,8 +1111,8 @@ You've earned</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-Ra-7KQ">
-                                <rect key="frame" x="151.5" y="830" width="111" height="30"/>
-                                <state key="normal" title="I do not consent">
+                                <rect key="frame" x="192" y="830" width="30" height="30"/>
+                                <state key="normal" title="Skip">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>

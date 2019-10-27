@@ -14,8 +14,7 @@ class ScannerView: UIView, AVCaptureMetadataOutputObjectsDelegate {
     let captureSession = AVCaptureSession()
     var completionHandler: ((_ barcode: String) -> Void)?
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    func setup() {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
         let videoInput: AVCaptureDeviceInput
         do {

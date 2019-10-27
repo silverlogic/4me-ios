@@ -132,6 +132,11 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
                 self.table.reloadData()
                 let score = self.currentScore + 50
                 self.setScore(score: score <= 2000 ? score : 2000)
+                if listItem.logTitle == "Carbs" {
+                    self.labelMgUntil.text = "\(Int(listItem.value))"
+                    self.circleMgUntil.progressValue = listItem.value / 130.0 as NSNumber
+                }
+                
                 self.performSegue(withIdentifier: "popover", sender: "points")
             }
         } else if let popover = sender as? String {
@@ -165,8 +170,6 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     var timeHasPassed = false
     func updateDataAfterTime() {
         self.labelSavings.text = "$53"
-        self.labelMgUntil.text = "75"
-        self.circleMgUntil.progressValue = 0.57
         self.labelDaysUntil.text = "13"
         self.circleDaysUntil.progressValue = 0.8
         self.setScore(score: 1950)

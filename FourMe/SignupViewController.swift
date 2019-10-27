@@ -7,13 +7,16 @@
 //
 
 import UIKit
-import HealthKit
+import AVFoundation
 
 class SignupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            
+        }
     }
     
     @IBAction func actionLogin(_ sender: Any) {
