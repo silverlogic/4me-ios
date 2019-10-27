@@ -513,8 +513,83 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOz-A0-pfT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdR-9Z-MW7" customClass="ToggleButton" customModule="FourMe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="102" height="50"/>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pAI-Zm-Wjj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Testing Center">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="relatedButtons" destination="p6s-av-Oum" collectionClass="NSMutableArray" id="441-kC-0ok"/>
+                                            <outletCollection property="relatedButtons" destination="7Wj-2P-ieJ" collectionClass="NSMutableArray" id="ZeZ-bf-QuB"/>
+                                            <outletCollection property="relatedButtons" destination="gBY-1V-rFS" collectionClass="NSMutableArray" id="vjB-Hr-8Gb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6s-av-Oum" customClass="ToggleButton" customModule="FourMe" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="68" width="102" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Groceries">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="relatedButtons" destination="cdR-9Z-MW7" collectionClass="NSMutableArray" id="huy-FH-ATb"/>
+                                            <outletCollection property="relatedButtons" destination="7Wj-2P-ieJ" collectionClass="NSMutableArray" id="IGJ-cR-gmJ"/>
+                                            <outletCollection property="relatedButtons" destination="gBY-1V-rFS" collectionClass="NSMutableArray" id="4bf-7v-iYp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wj-2P-ieJ" customClass="ToggleButton" customModule="FourMe" customModuleProvider="target">
+                                        <rect key="frame" x="208" y="68" width="102" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nuZ-wX-wiP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Sports">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="relatedButtons" destination="cdR-9Z-MW7" collectionClass="NSMutableArray" id="SJj-K6-Dtt"/>
+                                            <outletCollection property="relatedButtons" destination="p6s-av-Oum" collectionClass="NSMutableArray" id="bjf-kc-pmh"/>
+                                            <outletCollection property="relatedButtons" destination="gBY-1V-rFS" collectionClass="NSMutableArray" id="wED-rs-L9T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBY-1V-rFS" customClass="ToggleButton" customModule="FourMe" customModuleProvider="target">
+                                        <rect key="frame" x="312" y="68" width="102" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Education">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <outletCollection property="relatedButtons" destination="cdR-9Z-MW7" collectionClass="NSMutableArray" id="mCs-xl-vbn"/>
+                                            <outletCollection property="relatedButtons" destination="p6s-av-Oum" collectionClass="NSMutableArray" id="zCO-wj-RZj"/>
+                                            <outletCollection property="relatedButtons" destination="7Wj-2P-ieJ" collectionClass="NSMutableArray" id="VdN-GA-1a3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gBY-1V-rFS" secondAttribute="trailing" id="8eP-3c-NMY"/>
+                                    <constraint firstItem="7Wj-2P-ieJ" firstAttribute="bottom" secondItem="p6s-av-Oum" secondAttribute="bottom" id="8u7-Li-abf"/>
+                                    <constraint firstItem="gBY-1V-rFS" firstAttribute="leading" secondItem="7Wj-2P-ieJ" secondAttribute="trailing" constant="2" id="9e7-pr-UqE"/>
+                                    <constraint firstItem="p6s-av-Oum" firstAttribute="bottom" secondItem="cdR-9Z-MW7" secondAttribute="bottom" id="DEr-aJ-Xsd"/>
+                                    <constraint firstItem="gBY-1V-rFS" firstAttribute="height" secondItem="7Wj-2P-ieJ" secondAttribute="height" id="Dkl-zr-546"/>
+                                    <constraint firstItem="p6s-av-Oum" firstAttribute="height" secondItem="cdR-9Z-MW7" secondAttribute="height" id="EH5-cK-ggy"/>
+                                    <constraint firstItem="p6s-av-Oum" firstAttribute="leading" secondItem="cdR-9Z-MW7" secondAttribute="trailing" constant="2" id="HcW-As-lzv"/>
+                                    <constraint firstItem="gBY-1V-rFS" firstAttribute="bottom" secondItem="7Wj-2P-ieJ" secondAttribute="bottom" id="M02-DD-FLl"/>
+                                    <constraint firstItem="cdR-9Z-MW7" firstAttribute="leading" secondItem="gOz-A0-pfT" secondAttribute="leading" id="ONf-ZZ-HGz"/>
+                                    <constraint firstAttribute="bottom" secondItem="cdR-9Z-MW7" secondAttribute="bottom" constant="2" id="PZq-Wd-Ucp"/>
+                                    <constraint firstItem="7Wj-2P-ieJ" firstAttribute="leading" secondItem="p6s-av-Oum" secondAttribute="trailing" constant="2" id="Zw4-7C-QF5"/>
+                                    <constraint firstItem="p6s-av-Oum" firstAttribute="width" secondItem="cdR-9Z-MW7" secondAttribute="width" id="ce5-Ag-pot"/>
+                                    <constraint firstItem="7Wj-2P-ieJ" firstAttribute="width" secondItem="p6s-av-Oum" secondAttribute="width" id="jgh-tL-wGe"/>
+                                    <constraint firstItem="gBY-1V-rFS" firstAttribute="width" secondItem="7Wj-2P-ieJ" secondAttribute="width" id="nYy-JW-w7b"/>
+                                    <constraint firstItem="7Wj-2P-ieJ" firstAttribute="height" secondItem="p6s-av-Oum" secondAttribute="height" id="rWq-e1-y1Z"/>
                                     <constraint firstAttribute="height" constant="120" id="uUy-TW-D67"/>
                                 </constraints>
                             </view>
@@ -555,30 +630,6 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMr-HK-6IU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4301" y="830"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zEW-55-mlq">
-            <objects>
-                <viewController id="Gcb-db-gOU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="O0p-g4-FfQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEM-4S-AXM">
-                                <rect key="frame" x="178" y="97" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="py9-Sx-ACn"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfa-ht-eGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1200" y="1738"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="BJU-M2-91Y">
