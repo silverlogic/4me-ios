@@ -13,6 +13,9 @@ class CircleView: UIView {
     let outerCircle = CAShapeLayer()
     let fillCircle = CAShapeLayer()
     
+    @IBInspectable var color: UIColor?
+    @IBInspectable var progressValue: NSNumber?
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.layer.addSublayer(outerCircle)
@@ -20,13 +23,14 @@ class CircleView: UIView {
     }
     
     override func layoutSubviews() {
-        self.outerCircle.strokeColor = UIColor.gray.cgColor
+        let color = self.color ?? UIColor.gray
+        self.outerCircle.strokeColor = color.cgColor
         self.outerCircle.fillColor = UIColor.clear.cgColor
-        self.outerCircle.lineWidth = 4
+        self.outerCircle.lineWidth = 7
         let radius: CGFloat = self.frame.size.width / 2
         self.outerCircle.path = UIBezierPath(roundedRect:
             CGRect(x: 0, y: 0, width: 2.0 * radius, height: 2.0 * radius), cornerRadius: radius).cgPath
-        self.outerCircle.strokeEnd = 0.8
+        self.outerCircle.strokeEnd = CGFloat(self.progressValue?.floatValue ?? 1.0)
     }
     
     /*

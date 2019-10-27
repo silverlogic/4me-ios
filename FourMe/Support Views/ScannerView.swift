@@ -55,7 +55,7 @@ class ScannerView: UIView, AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput,
                         didOutput metadataObjects: [AVMetadataObject],
                         from connection: AVCaptureConnection) {
-        NSLog("\(metadataObjects)")
+        captureSession.stopRunning()
     }
 
 }
