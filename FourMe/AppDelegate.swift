@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        DropDown.startListeningToKeyboard()
+        
+        let center =  UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            
+        }
+        
         return true
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        let center =  UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        content.title = "Input your data"
+        content.body = "Input your data"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval:1.0, repeats: false)
+        let request = UNNotificationRequest(identifier: "HLTHHack", content: content, trigger: trigger)
+        
+        center.add(request) { (error) in
+            NSLog("Notification request error")
+        }
     }
 
 }
