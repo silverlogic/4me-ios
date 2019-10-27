@@ -125,6 +125,15 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
             vc.completionHandler = {
                 self.table.reloadData()
                 self.setScore(score: self.currentScore + 50)
+                self.performSegue(withIdentifier: "popover", sender: "points")
+            }
+        } else if let popover = sender as? String {
+            let vc = segue.destination as! PopoverViewController
+            vc.popover = popover
+            if popover == "points" {
+                vc.completionHandler = {
+                    self.performSegue(withIdentifier: "popover", sender: "food")
+                }
             }
         }
     }
@@ -147,6 +156,12 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.setScore(score: 1950)
     }
 
+    @IBAction func actionTapScore(_ sender: Any) {
+        if self.currentScore == 2000 {
+            self.performSegue(withIdentifier: "popover", sender: "giftCard")
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
