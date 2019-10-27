@@ -14,13 +14,17 @@ class ListItem: NSObject {
     var value: Float
     let unit: String
     let chartImage: UIImage
+    let logTitle: String
+    let additive: Bool
     
-    init(image: UIImage, title: String, value: Float, unit: String, chartImage: UIImage) {
+    init(image: UIImage, title: String, value: Float, unit: String, chartImage: UIImage, logTitle: String, additive: Bool) {
         self.image = image
         self.title = title
         self.value = value
         self.unit = unit
         self.chartImage = chartImage
+        self.logTitle = logTitle
+        self.additive = additive
     }
 }
 
@@ -32,7 +36,7 @@ class DashboardCell: UITableViewCell {
     
 }
 
-class DashboardViewController: UIViewController, UITableViewDataSource {
+class DashboardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
     
@@ -41,27 +45,37 @@ class DashboardViewController: UIViewController, UITableViewDataSource {
                  title: "Insuline Injections",
                  value: 0,
                  unit: "units",
-                 chartImage: UIImage(named: "GlucoseChart.png")!),
+                 chartImage: UIImage(named: "GlucoseChart.png")!,
+                 logTitle: "Insuline Injection",
+                 additive: true),
         ListItem(image: UIImage(named: "GlucoseDrop.png")!,
                 title: "Glucose Level",
                 value: 0,
                 unit: "mg/dL",
-                chartImage: UIImage(named: "GlucoseChart.png")!),
+                chartImage: UIImage(named: "GlucoseChart.png")!,
+                logTitle: "Glucose Level",
+                additive: false),
         ListItem(image: UIImage(named: "DailyCarb.png")!,
                 title: "Daily Carbs",
                 value: 0,
                 unit: "mg",
-                chartImage: UIImage(named: "CarbsChart.png")!),
+                chartImage: UIImage(named: "CarbsChart.png")!,
+                logTitle: "Carbs",
+                additive: true),
         ListItem(image: UIImage(named: "WeightIcon.png")!,
                 title: "Weight",
                 value: 0,
                 unit: "lbs",
-                chartImage: UIImage(named: "WeightChart.png")!),
+                chartImage: UIImage(named: "WeightChart.png")!,
+                logTitle: "Weight",
+                additive: false),
         ListItem(image: UIImage(named: "Exercise.png")!,
                 title: "Exercise",
                 value: 0,
                 unit: "cal",
-                chartImage: UIImage(named: "ExerciseChart.png")!),
+                chartImage: UIImage(named: "ExerciseChart.png")!,
+                logTitle: "Exercise",
+                additive: true),
     ]
     
     override func viewDidLoad() {
@@ -84,6 +98,21 @@ class DashboardViewController: UIViewController, UITableViewDataSource {
         cell.bottomLabel.text = "\(listItem.value) \(listItem.unit)"
         cell.rightImageView.image = listItem.chartImage
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let listItem = self.listItems[indexPath.row]
+        self.performSegue(withIdentifier: "log", sender: listItem)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let listItem = sender as? ListItem {
+            let vc = segue.destination as! LogViewController
+            vc.listItem = listItem
+            vc.completionHandler = {
+                self.table.reloadData()
+            }
+        }
     }
 
     /*
