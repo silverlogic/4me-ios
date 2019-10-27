@@ -20,7 +20,6 @@
 		22775D00236513D400532768 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22775CFF236513D300532768 /* SignupViewController.swift */; };
 		22BFCA3F236523AB00C42124 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BFCA3E236523AB00C42124 /* HealthKit.framework */; };
 		22BFCA42236528E500C42124 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFCA41236528E500C42124 /* CircleView.swift */; };
-		22BFCA442365316900C42124 /* AskHealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFCA432365316900C42124 /* AskHealthKitViewController.swift */; };
 		22BFCA462365450900C42124 /* NextTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFCA452365450900C42124 /* NextTextField.swift */; };
 		22BFCA4823654F8B00C42124 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFCA4723654F8B00C42124 /* ScannerView.swift */; };
 		22E953542365FF090014C6CB /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E953532365FF090014C6CB /* HealthKitViewController.swift */; };
@@ -44,7 +43,6 @@
 		22BFCA3D236523AA00C42124 /* FourMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FourMe.entitlements; sourceTree = "<group>"; };
 		22BFCA3E236523AB00C42124 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		22BFCA41236528E500C42124 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		22BFCA432365316900C42124 /* AskHealthKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskHealthKitViewController.swift; sourceTree = "<group>"; };
 		22BFCA452365450900C42124 /* NextTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTextField.swift; sourceTree = "<group>"; };
 		22BFCA4723654F8B00C42124 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		22E953532365FF090014C6CB /* HealthKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				22242A972365115E00B544D4 /* LaunchScreen.storyboard */,
 				22242A9A2365115E00B544D4 /* Info.plist */,
 				22775CFF236513D300532768 /* SignupViewController.swift */,
-				22BFCA432365316900C42124 /* AskHealthKitViewController.swift */,
 				221C3EDC23655C6000E379F3 /* DashboardViewController.swift */,
 				22435E38236585C0004E7C30 /* LogViewController.swift */,
 				22E953532365FF090014C6CB /* HealthKitViewController.swift */,
@@ -256,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BFCA42236528E500C42124 /* CircleView.swift in Sources */,
-				22BFCA442365316900C42124 /* AskHealthKitViewController.swift in Sources */,
 				22775D00236513D400532768 /* SignupViewController.swift in Sources */,
 				22435E39236585C0004E7C30 /* LogViewController.swift in Sources */,
 				22BFCA462365450900C42124 /* NextTextField.swift in Sources */,
