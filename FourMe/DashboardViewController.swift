@@ -187,7 +187,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     @IBAction func actionSavings(_ sender: Any) {
         if !showingSavingsYear {
             self.labelSavings.text = "$847"
-            self.labelSavingsSubtitle.text = "ANUAL\nINSULIN\nSAVINGS"
+            self.labelSavingsSubtitle.text = "ANNUAL\nINSULIN\nSAVINGS"
             self.showingSavingsYear = true
         } else {
             self.labelSavings.text = self.timeHasPassed ? "$53" : "$0"
