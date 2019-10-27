@@ -39,6 +39,13 @@ class DashboardCell: UITableViewCell {
 class DashboardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var labelScore: UILabel!
+    @IBOutlet weak var constraintScore: NSLayoutConstraint!
+    @IBOutlet weak var labelSavings: UILabel!
+    @IBOutlet weak var labelDaysUntil: UILabel!
+    @IBOutlet weak var circleDaysUntil: CircleView!
+    @IBOutlet weak var labelMgUntil: UILabel!
+    @IBOutlet weak var circleMgUntil: CircleView!
     
     let listItems = [
         ListItem(image: UIImage(named: "InsulinNeedle.png")!,
@@ -80,6 +87,8 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.circleDaysUntil.progressValue = 0
+        self.circleMgUntil.progressValue = 0
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -95,7 +104,7 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         let listItem = self.listItems[indexPath.row]
         cell.leftImageView.image = listItem.image
         cell.topLabel.text = listItem.title
-        cell.bottomLabel.text = "\(listItem.value) \(listItem.unit)"
+        cell.bottomLabel.text = "\(Int(listItem.value)) \(listItem.unit)"
         cell.rightImageView.image = listItem.chartImage
         return cell
     }
@@ -111,8 +120,27 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
             vc.listItem = listItem
             vc.completionHandler = {
                 self.table.reloadData()
+                self.setScore(score: self.currentScore + 50)
             }
         }
+    }
+    
+    var currentScore: Float = 0
+    let maxScoreWidth: Float = 210.0
+    let maxScore: Float = 2000
+    func setScore(score: Float) {
+        self.currentScore = score
+        self.constraintScore.constant = CGFloat(self.currentScore / self.maxScore * self.maxScoreWidth)
+        self.labelScore.text = "\(Int(self.currentScore)) points"
+    }
+    
+    func updateDataAfterTime() {
+        self.labelSavings.text = "$53"
+        self.labelMgUntil.text = "75"
+        self.circleMgUntil.progressValue = 0.57
+        self.labelDaysUntil.text = "13"
+        self.circleDaysUntil.progressValue = 0.8
+        self.setScore(score: 1950)
     }
 
     /*

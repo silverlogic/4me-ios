@@ -12,6 +12,7 @@ import AVFoundation
 class ScannerView: UIView, AVCaptureMetadataOutputObjectsDelegate {
 
     let captureSession = AVCaptureSession()
+    var completionHandler: ((_ barcode: String) -> Void)?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -56,6 +57,9 @@ class ScannerView: UIView, AVCaptureMetadataOutputObjectsDelegate {
                         didOutput metadataObjects: [AVMetadataObject],
                         from connection: AVCaptureConnection) {
         captureSession.stopRunning()
+        if let completionHandler = self.completionHandler {
+            completionHandler("Barcode")
+        }
     }
 
 }

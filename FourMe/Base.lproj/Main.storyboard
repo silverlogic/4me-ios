@@ -277,8 +277,8 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="53$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W6-HE-09d">
-                                        <rect key="frame" x="18.5" y="17" width="63.5" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W6-HE-09d">
+                                        <rect key="frame" x="28.5" y="17" width="43.5" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -308,7 +308,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pha-Cd-EGP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pha-Cd-EGP">
                                         <rect key="frame" x="31.5" y="11.5" width="17" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <color key="textColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -324,6 +324,11 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                                     <constraint firstItem="mVM-dh-DSK" firstAttribute="centerX" secondItem="ub5-ob-Hof" secondAttribute="centerX" id="Ica-Ba-qNm"/>
                                     <constraint firstItem="Pha-Cd-EGP" firstAttribute="centerX" secondItem="ub5-ob-Hof" secondAttribute="centerX" id="foO-XB-rcP"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkR-Ph-QG9" customClass="CircleView" customModule="FourMe" customModuleProvider="target">
                                 <rect key="frame" x="57" y="329" width="80" height="80"/>
@@ -334,8 +339,8 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHr-eQ-Lgw">
-                                        <rect key="frame" x="24" y="11.5" width="32.5" height="33.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHr-eQ-Lgw">
+                                        <rect key="frame" x="31.5" y="11.5" width="17.5" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <color key="textColor" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -348,12 +353,29 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                                     <constraint firstItem="yHr-eQ-Lgw" firstAttribute="centerY" secondItem="KkR-Ph-QG9" secondAttribute="centerY" constant="-12" id="ViK-KW-QyG"/>
                                     <constraint firstItem="yHr-eQ-Lgw" firstAttribute="centerX" secondItem="KkR-Ph-QG9" secondAttribute="centerX" id="qG6-XI-Weu"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.027450980390000001" green="0.51764705879999995" blue="0.74117647060000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhW-Qi-gpV">
                                 <rect key="frame" x="102" y="187" width="210" height="30"/>
-                                <color key="backgroundColor" red="0.91372549020000005" green="0.7725490196" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyc-vI-lMj">
+                                        <rect key="frame" x="0.0" y="0.0" width="1" height="30"/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.7725490196" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="Q7N-yH-2Mu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.7725490196" blue="0.4941176471" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="1v3-CR-kmY"/>
+                                    <constraint firstItem="Pyc-vI-lMj" firstAttribute="leading" secondItem="qhW-Qi-gpV" secondAttribute="leading" id="99g-p2-IlN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pyc-vI-lMj" secondAttribute="bottom" id="FKy-Li-e0D"/>
+                                    <constraint firstItem="Pyc-vI-lMj" firstAttribute="top" secondItem="qhW-Qi-gpV" secondAttribute="top" id="PgD-0a-ikt"/>
                                     <constraint firstAttribute="height" constant="30" id="gd6-W1-3gV"/>
                                 </constraints>
                             </view>
@@ -487,8 +509,17 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aoP-r5-npp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="DashIcon" id="VDk-rv-9WJ"/>
+                    <tabBarItem key="tabBarItem" title="" image="DashIcon" id="VDk-rv-9WJ">
+                        <color key="badgeColor" white="0.8789419235" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
+                        <outlet property="circleDaysUntil" destination="ub5-ob-Hof" id="tBA-kj-Xcq"/>
+                        <outlet property="circleMgUntil" destination="KkR-Ph-QG9" id="ETM-LX-Wnc"/>
+                        <outlet property="constraintScore" destination="Q7N-yH-2Mu" id="AAs-Wf-2Jg"/>
+                        <outlet property="labelDaysUntil" destination="Pha-Cd-EGP" id="kFZ-6q-YRv"/>
+                        <outlet property="labelMgUntil" destination="yHr-eQ-Lgw" id="VfU-NN-lIe"/>
+                        <outlet property="labelSavings" destination="2W6-HE-09d" id="O3k-sZ-61n"/>
+                        <outlet property="labelScore" destination="8iK-SN-1dH" id="9wr-Cc-grE"/>
                         <outlet property="table" destination="z62-vP-kDO" id="abg-yq-T3D"/>
                         <segue destination="EFL-dC-8Ga" kind="presentation" identifier="log" modalPresentationStyle="fullScreen" id="e5F-ZN-w4Q"/>
                     </connections>
@@ -680,31 +711,68 @@ By allowing us to anonymously use your data for research you will be rewarded.</
                                 </constraints>
                             </imageView>
                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f21-Nx-x0y" customClass="ScannerView" customModule="FourMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="293" width="414" height="459"/>
+                                <rect key="frame" x="0.0" y="342" width="414" height="410"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TV-oy-aGm">
+                                <rect key="frame" x="0.0" y="288" width="414" height="2"/>
+                                <color key="backgroundColor" white="0.8789419235" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="zUU-BW-MPA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzF-yg-bbX">
+                                <rect key="frame" x="0.0" y="340" width="414" height="2"/>
+                                <color key="backgroundColor" white="0.8789419235" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="XYJ-yz-466"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VhE-t4-blu">
+                                <rect key="frame" x="99" y="298" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Cf7-Yt-Vr3"/>
+                                    <constraint firstAttribute="height" constant="32" id="ywg-bm-0AI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="October 27, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrq-By-5OH">
+                                <rect key="frame" x="141" y="303.5" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="f21-Nx-x0y" firstAttribute="trailing" secondItem="l0Q-zF-OIn" secondAttribute="trailing" id="0Ca-yr-I4h"/>
+                            <constraint firstItem="vrq-By-5OH" firstAttribute="centerX" secondItem="GIe-nK-4Qu" secondAttribute="centerX" id="2ec-Rj-qUo"/>
                             <constraint firstItem="D3u-4z-cHp" firstAttribute="height" secondItem="j7o-of-MRX" secondAttribute="height" id="3I2-v6-cZH"/>
                             <constraint firstItem="2ee-VJ-WoA" firstAttribute="top" secondItem="xPa-hr-VY5" secondAttribute="bottom" constant="15" id="5JS-m3-GsB"/>
+                            <constraint firstItem="f21-Nx-x0y" firstAttribute="top" secondItem="NzF-yg-bbX" secondAttribute="bottom" id="5RW-J0-pW5"/>
                             <constraint firstItem="xPa-hr-VY5" firstAttribute="trailing" secondItem="l0Q-zF-OIn" secondAttribute="trailing" id="639-aK-Ql4"/>
+                            <constraint firstItem="VhE-t4-blu" firstAttribute="top" secondItem="1TV-oy-aGm" secondAttribute="bottom" constant="8" id="BBN-DB-sAa"/>
+                            <constraint firstItem="1TV-oy-aGm" firstAttribute="top" secondItem="D3u-4z-cHp" secondAttribute="bottom" constant="15" id="BKQ-hD-pzC"/>
                             <constraint firstItem="D3u-4z-cHp" firstAttribute="leading" secondItem="j7o-of-MRX" secondAttribute="trailing" constant="15" id="C3G-cJ-wJP"/>
+                            <constraint firstItem="l0Q-zF-OIn" firstAttribute="trailing" secondItem="1TV-oy-aGm" secondAttribute="trailing" id="CVl-Xk-uJb"/>
                             <constraint firstItem="D3u-4z-cHp" firstAttribute="top" secondItem="2ee-VJ-WoA" secondAttribute="bottom" constant="15" id="DZH-Fh-ZAL"/>
                             <constraint firstItem="S5e-tZ-xPH" firstAttribute="centerX" secondItem="GIe-nK-4Qu" secondAttribute="centerX" id="FIv-it-JRI"/>
                             <constraint firstItem="D3u-4z-cHp" firstAttribute="centerY" secondItem="j7o-of-MRX" secondAttribute="centerY" id="HGT-kQ-ybg"/>
                             <constraint firstItem="Usy-BM-S8Q" firstAttribute="top" secondItem="l0Q-zF-OIn" secondAttribute="top" id="IKC-uT-yuv"/>
                             <constraint firstItem="k2b-up-bkh" firstAttribute="centerX" secondItem="GIe-nK-4Qu" secondAttribute="centerX" id="KK5-Lu-fEA"/>
+                            <constraint firstItem="1TV-oy-aGm" firstAttribute="leading" secondItem="l0Q-zF-OIn" secondAttribute="leading" id="Kcf-x1-VE3"/>
+                            <constraint firstItem="l0Q-zF-OIn" firstAttribute="trailing" secondItem="NzF-yg-bbX" secondAttribute="trailing" id="L0B-bB-ezS"/>
                             <constraint firstItem="xPa-hr-VY5" firstAttribute="leading" secondItem="l0Q-zF-OIn" secondAttribute="leading" id="N6P-zB-dhz"/>
                             <constraint firstItem="2ee-VJ-WoA" firstAttribute="centerX" secondItem="GIe-nK-4Qu" secondAttribute="centerX" id="RQC-W6-UdE"/>
+                            <constraint firstItem="vrq-By-5OH" firstAttribute="centerY" secondItem="VhE-t4-blu" secondAttribute="centerY" id="RmC-Us-h4a"/>
                             <constraint firstItem="k2b-up-bkh" firstAttribute="top" secondItem="f21-Nx-x0y" secondAttribute="bottom" constant="20" id="Wcv-os-cWc"/>
                             <constraint firstItem="Usy-BM-S8Q" firstAttribute="leading" secondItem="l0Q-zF-OIn" secondAttribute="leading" constant="20" id="XiG-Bs-Bi0"/>
+                            <constraint firstItem="NzF-yg-bbX" firstAttribute="leading" secondItem="l0Q-zF-OIn" secondAttribute="leading" id="Xn8-oE-z4K"/>
+                            <constraint firstItem="vrq-By-5OH" firstAttribute="leading" secondItem="VhE-t4-blu" secondAttribute="trailing" constant="10" id="Y8i-Dc-fPS"/>
                             <constraint firstItem="l0Q-zF-OIn" firstAttribute="bottom" secondItem="k2b-up-bkh" secondAttribute="bottom" constant="40" id="YY9-TK-NXn"/>
                             <constraint firstItem="O7u-d2-8EV" firstAttribute="centerY" secondItem="D3u-4z-cHp" secondAttribute="centerY" id="Z6a-Re-FV1"/>
                             <constraint firstItem="D3u-4z-cHp" firstAttribute="centerX" secondItem="GIe-nK-4Qu" secondAttribute="centerX" id="bCY-1K-d8b"/>
                             <constraint firstItem="xPa-hr-VY5" firstAttribute="top" secondItem="Usy-BM-S8Q" secondAttribute="bottom" constant="15" id="k81-YX-0j4"/>
-                            <constraint firstItem="f21-Nx-x0y" firstAttribute="top" secondItem="D3u-4z-cHp" secondAttribute="bottom" constant="20" id="lyL-Mb-s7O"/>
+                            <constraint firstItem="NzF-yg-bbX" firstAttribute="top" secondItem="VhE-t4-blu" secondAttribute="bottom" constant="10" id="nOO-Pw-YtQ"/>
                             <constraint firstItem="l0Q-zF-OIn" firstAttribute="trailing" secondItem="opw-1o-hZ2" secondAttribute="trailing" constant="20" id="q7I-v0-Lge"/>
                             <constraint firstItem="opw-1o-hZ2" firstAttribute="top" secondItem="l0Q-zF-OIn" secondAttribute="top" id="unq-AF-T5Y"/>
                             <constraint firstItem="S5e-tZ-xPH" firstAttribute="top" secondItem="k2b-up-bkh" secondAttribute="bottom" constant="8" id="v0O-uE-RKn"/>
@@ -767,6 +835,7 @@ By allowing us to anonymously use your data for research you will be rewarded.</
     </scenes>
     <resources>
         <image name="AliceProfileImage" width="176" height="177"/>
+        <image name="CalendarIcon" width="67" height="79"/>
         <image name="DashIcon" width="25" height="13.666666984558105"/>
         <image name="MapIcon" width="17.333333969116211" height="25"/>
         <image name="PlusIcon" width="75" height="75"/>

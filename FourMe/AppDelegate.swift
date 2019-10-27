@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             
         }
         
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
+        
         return true
     }
     
@@ -41,6 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        let tabController = self.window!.rootViewController as! UITabBarController
+        if let vc = tabController.selectedViewController as? DashboardViewController {
+            vc.updateDataAfterTime()
+        }
         
         completionHandler()
     }
