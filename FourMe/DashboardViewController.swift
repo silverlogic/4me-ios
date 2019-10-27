@@ -172,8 +172,18 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.labelSavings.text = "$53"
         self.labelDaysUntil.text = "13"
         self.circleDaysUntil.progressValue = 0.8
+        self.labelMgUntil.text = "75"
+        self.circleMgUntil.progressValue = 75 / 130.0 as NSNumber
         self.setScore(score: 1950)
         self.timeHasPassed = true
+        
+        listItems[0].value = 64
+        listItems[1].value = 203
+        listItems[2].value = 75
+        listItems[3].value = 178
+        listItems[4].value = 360
+        
+        self.table.reloadData()
     }
 
     @IBAction func actionTapScore(_ sender: Any) {
