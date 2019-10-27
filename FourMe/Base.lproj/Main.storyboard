@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jVl-cA-Zmn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EFL-dC-8Ga">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -191,15 +191,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-54-PM2">
-                                <rect key="frame" x="39" y="71" width="336" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_reverse" translatesAutoresizingMaskIntoConstraints="NO" id="M8g-VD-sWr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M8g-VD-sWr" firstAttribute="leading" secondItem="EYa-qM-x9D" secondAttribute="leading" id="0Lh-cc-qI2"/>
+                            <constraint firstItem="M8g-VD-sWr" firstAttribute="trailing" secondItem="EYa-qM-x9D" secondAttribute="trailing" id="46m-Wl-Qf1"/>
+                            <constraint firstItem="M8g-VD-sWr" firstAttribute="top" secondItem="lfz-YA-GQi" secondAttribute="top" id="aCO-DX-Y6C"/>
+                            <constraint firstAttribute="bottom" secondItem="M8g-VD-sWr" secondAttribute="bottom" id="tDD-hP-PHz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EYa-qM-x9D"/>
                     </view>
                     <navigationItem key="navigationItem" id="qPP-ti-C29"/>
@@ -327,14 +329,35 @@
                     <view key="view" contentMode="scaleToFill" id="t7p-l3-Z0R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOz-A0-pfT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="uUy-TW-D67"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tq7-CH-ctR">
+                                <rect key="frame" x="0.0" y="128" width="414" height="685"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tq7-CH-ctR" firstAttribute="top" secondItem="gOz-A0-pfT" secondAttribute="bottom" constant="8" id="Ur6-Hl-lj6"/>
+                            <constraint firstItem="gOz-A0-pfT" firstAttribute="top" secondItem="t7p-l3-Z0R" secondAttribute="top" id="bry-pK-QK9"/>
+                            <constraint firstItem="Tq7-CH-ctR" firstAttribute="leading" secondItem="tl6-Gs-xk0" secondAttribute="leading" id="ggM-5W-V8o"/>
+                            <constraint firstItem="gOz-A0-pfT" firstAttribute="leading" secondItem="tl6-Gs-xk0" secondAttribute="leading" id="jOi-WO-uMl"/>
+                            <constraint firstItem="gOz-A0-pfT" firstAttribute="trailing" secondItem="tl6-Gs-xk0" secondAttribute="trailing" id="oXV-To-JOQ"/>
+                            <constraint firstItem="Tq7-CH-ctR" firstAttribute="bottom" secondItem="tl6-Gs-xk0" secondAttribute="bottom" id="vYk-u9-F9L"/>
+                            <constraint firstItem="Tq7-CH-ctR" firstAttribute="trailing" secondItem="tl6-Gs-xk0" secondAttribute="trailing" id="yvX-un-if6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tl6-Gs-xk0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Ym8-3x-vtM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcx-AQ-HlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3478" y="830"/>
+            <point key="canvasLocation" x="3476.811594202899" y="829.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zEW-55-mlq">
@@ -391,13 +414,20 @@
                     <view key="view" contentMode="scaleToFill" id="GIe-nK-4Qu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0m-ju-6jd" customClass="ScannerView" customModule="FourMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="79" width="414" height="471"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="l0Q-zF-OIn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wNK-DM-tKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="2251"/>
+            <point key="canvasLocation" x="3276.811594202899" y="1755.8035714285713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rOH-5k-u7p">
@@ -438,5 +468,6 @@
     <resources>
         <image name="logo" width="832" height="640"/>
         <image name="splash" width="1125" height="2388"/>
+        <image name="splash_reverse" width="1125" height="2388"/>
     </resources>
 </document>
