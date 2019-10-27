@@ -18,6 +18,8 @@ class PopoverViewController: UIViewController {
     @IBOutlet weak var labelMiddle: UILabel!
     @IBOutlet weak var labelBottom: UILabel!
     @IBOutlet weak var imageViewSplash: UIImageView!
+    @IBOutlet weak var imageViewWalmartGiftCard: UIImageView!
+    @IBOutlet weak var imageViewAppleWallet: UIImageView!
     
     var completionHandler: (() -> Void)?
     var popover: String?
@@ -31,9 +33,11 @@ class PopoverViewController: UIViewController {
         if let popover = self.popover {
             if popover == "giftCard" {
                 self.imageViewtop.image = UIImage(named: "CreditCard.png")
-                self.labelTop.text = "Congratulations!\nYou've won a"
-                self.labelMiddle.text = "$20"
-                self.labelBottom.text = "Walmart Gift Card"
+                self.labelTop.text = "Congratulations!\nYou've earned a"
+                self.labelMiddle.text = ""
+                self.labelBottom.text = ""
+                self.imageViewWalmartGiftCard.isHidden = false
+                self.imageViewAppleWallet.isHidden = false
             } else if popover == "food" {
                 self.imageViewtop.image = UIImage(named: "FoodModalIcon.png")
                 self.labelTop.text = ""

@@ -42,6 +42,12 @@ class LogViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if let listItem = self.listItem, listItem.logTitle != "Carbs" {
+            self.textFieldValue.becomeFirstResponder()
+        }
+    }
+    
     @IBAction func actionLog(_ sender: Any) {
         guard let listItem = self.listItem else {
             return

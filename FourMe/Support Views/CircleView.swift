@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircleView: UIView {
+class CircleView: UIControl {
 
     let outerCircle = CAShapeLayer()
     let fillCircle = CAShapeLayer()

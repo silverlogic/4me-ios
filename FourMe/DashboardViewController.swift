@@ -42,10 +42,12 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var labelScore: UILabel!
     @IBOutlet weak var constraintScore: NSLayoutConstraint!
     @IBOutlet weak var labelSavings: UILabel!
+    @IBOutlet weak var labelSavingsSubtitle: UILabel!
     @IBOutlet weak var labelDaysUntil: UILabel!
     @IBOutlet weak var circleDaysUntil: CircleView!
     @IBOutlet weak var labelMgUntil: UILabel!
     @IBOutlet weak var circleMgUntil: CircleView!
+    @IBOutlet weak var imageViewStar: UIImageView!
     
     let listItems = [
         ListItem(image: UIImage(named: "InsulinNeedle.png")!,
@@ -118,8 +120,12 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.performSegue(withIdentifier: "log", sender: listItem)
     }
     
+    var showMealPopup = false
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let listItem = sender as? ListItem {
+            if listItem.logTitle == "Glucose Level" {
+                self.showMealPopup = true
+            }
             let vc = segue.destination as! LogViewController
             vc.listItem = listItem
             vc.completionHandler = {
@@ -131,8 +137,11 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
             let vc = segue.destination as! PopoverViewController
             vc.popover = popover
             if popover == "points" {
-                vc.completionHandler = {
-                    self.performSegue(withIdentifier: "popover", sender: "food")
+                if self.showMealPopup {
+                    self.showMealPopup = false
+                    vc.completionHandler = {
+                        self.performSegue(withIdentifier: "popover", sender: "food")
+                    }
                 }
             }
         }
@@ -145,8 +154,14 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.currentScore = score
         self.constraintScore.constant = CGFloat(self.currentScore / self.maxScore * self.maxScoreWidth)
         self.labelScore.text = "\(Int(self.currentScore)) points"
+        if score == 2000 {
+            self.imageViewStar.isHidden = false
+        } else {
+            self.imageViewStar.isHidden = true
+        }
     }
     
+    var timeHasPassed = false
     func updateDataAfterTime() {
         self.labelSavings.text = "$53"
         self.labelMgUntil.text = "75"
@@ -154,14 +169,28 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
         self.labelDaysUntil.text = "13"
         self.circleDaysUntil.progressValue = 0.8
         self.setScore(score: 1950)
+        self.timeHasPassed = true
     }
 
     @IBAction func actionTapScore(_ sender: Any) {
         if self.currentScore == 2000 {
             self.performSegue(withIdentifier: "popover", sender: "giftCard")
+            self.setScore(score: 0)
         }
     }
     
+    var showingSavingsYear = false
+    @IBAction func actionSavings(_ sender: Any) {
+        if !showingSavingsYear {
+            self.labelSavings.text = "$847"
+            self.labelSavingsSubtitle.text = "ANUAL\nINSULIN\nSAVINGS"
+            self.showingSavingsYear = true
+        } else {
+            self.labelSavings.text = self.timeHasPassed ? "$53" : "$0"
+            self.labelSavingsSubtitle.text = "MONTHLY\nINSULIN\nSAVINGS"
+            self.showingSavingsYear = false
+        }
+    }
     /*
     // MARK: - Navigation
 

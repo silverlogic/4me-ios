@@ -7,12 +7,9 @@
 //
 
 import UIKit
-import HealthKit
 
 class ConsentViewController: UIViewController {
 
-    let healthStore = HKHealthStore();
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,15 +17,7 @@ class ConsentViewController: UIViewController {
     }
     
     @IBAction func actionWantHelp(_ sender: Any) {
-        let allTypes = Set([HKObjectType.quantityType(forIdentifier: .height)!,
-                            HKObjectType.quantityType(forIdentifier: .bodyMass)!,
-                            HKObjectType.characteristicType(forIdentifier: .biologicalSex)!]);
-        
-        healthStore.requestAuthorization(toShare: nil, read: allTypes) { (success, error) in
-            DispatchQueue.main.async {
-                self.parent?.dismiss(animated: true, completion: nil)
-            }
-        }
+        self.parent?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func dontConsent(_ sender: Any) {

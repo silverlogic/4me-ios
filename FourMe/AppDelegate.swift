@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationDidEnterBackground(_ application: UIApplication) {
         let center =  UNUserNotificationCenter.current()
         let content = UNMutableNotificationContent()
-        content.title = "Input your data"
-        content.body = "Input your data"
+        content.title = "Insulin Reminder"
+        content.body = "It’s time to take your next insulin injection."
         content.sound = UNNotificationSound.default
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval:1.0, repeats: false)
